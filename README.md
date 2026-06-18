@@ -1,16 +1,26 @@
-# wishy
+# 🎁 Wishy — Moja Lista Życzeń
 
-A new Flutter project.
+Aplikacja do zarządzania listą marzeń z synchronizacją w Firebase.
 
-## Getting Started
+## 🛠 Technologia i Wymagania
 
-This project is a starting point for a Flutter application.
+### Obowiązkowe:
+*   **Nawigacja**: GoRouter (trasy `/`, `/add`, `/edit`).
+*   **Stan**: Riverpod (`StreamProvider`, `FutureProvider`, `.when`).
+*   **API**: DIO (pobieranie kursów walut z NBP API).
+*   **Firebase**: 
+    *   Auth (Logowanie anonimowe).
+    *   Firestore (Pełny CRUD: zapis, odczyt, edycja, usuwanie).
 
-A few resources to get you started if this is your first Flutter project:
+### Dodatkowe (wybrane 4):
+1.  **Formularz**: TextField z obsługą danych.
+2.  **DatePicker**: Wybór daty z kalendarza systemowego.
+3.  **Dark/Light Mode**: Obsługa motywów przez FlexColorScheme.
+4.  **GoogleFonts**: Czcionka "Plus Jakarta Sans".
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Funkcje
+*   Logowanie anonimowe.
+*   Kurs USD/PLN na żywo (NBP API).
+*   Zarządzanie marzeniami (Dodaj / Edytuj / Usuń).
+*   Synchronizacja z chmurą Firestore.
+*   Przełącznik trybu ciemnego/jasnego.
